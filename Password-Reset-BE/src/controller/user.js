@@ -90,7 +90,7 @@ const forgetPassword = async(req,res)=>{
                 length:10,
                 charset:"alphanumeric"
             })
-            const expitationTimestamp = Date.now()
+            const expitationTimestamp = Date.now() + 2 * 60 * 1000
 
             console.log(expitationTimestamp)
 
